@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Wallpaper calculator</h1>
+                <form>
+                    <div class="form-row">
+                        <label for="">Lenght</label>
+                        <input id="lenght" class="form-control" name="Lenght" type="text" value="{{lenght}}" placeholder="Room's length in m" required>
+                        </div>
+
+                <div class="form-row">
+                    <label for="">Width</label>
+                    <input id="width" class="form-control" name="Width" type="text" value="{{width}}" placeholder="Room's width in m" required>
+                    </div>
+
+                <div class="form-row">
+                    <label for="">Height</label>
+                    <input id="height" class="form-control" name="Height" type="text" value="{{height}}" placeholder="Room's heigth in m" required>
+                    </div>
+
+                <div class="form-row">
+                    <label for="">Wallpaper's width</label>
+                    <input id="wallpaper_width" class="form-control" name="wallpaper_width" type="text" value="{{wallpaper_width}}" placeholder="Wallpaper's width in m" required>
+                    </div>
+
+                <button class="btn btn-primary">Calculate</button>
+
+                </form>
+
+
+
+{% if result %}
+<div>Number of rolls:{{result}}</div>
+{% endif %}
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
